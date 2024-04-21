@@ -1,0 +1,27 @@
+#==============================================#
+#                    v.1.0.0                   #  
+#     __________ ____   ___    __  __ ____     #
+#    |__  / ____|  _ \ / _ \  |  \/  |  _ \    #
+#      / /|  _| | |_) | | | | | |\/| | | | |   #
+#     / /_| |___|  _ <| |_| | | |  | | |_| |   #
+#    /____|_____|_| \_\\___/  |_|  |_|____/    #
+#       𝗠𝗨𝗟𝗧𝗜𝗗𝗘𝗩𝗜𝗖𝗘 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗨𝗦𝗘𝗥 𝗕𝗢𝗧       #
+#============================================= #
+# 
+#    * @project_name : Zero-Md
+#    * @author : @Double-Zero
+#    * @facebook : https://www.facebook.com/c/@double.zero.creations
+#    * @description : Zero-Md ,The best WhatsApp Bot.
+#    * @version 1.0.0
+# 
+# Don't change this [ /Double-Zero-Creations/ ] name!
+# Change from below link, else bot not works!
+
+  
+
+FROM quay.io/suhailtechinfo/suhail-v2
+RUN git clone https://github.com/Double-Zero-Creations/Zero-Md /root/Zero
+WORKDIR /root/Zero
+RUN npm install
+EXPOSE 8000
+CMD ["npm","start" ] 
